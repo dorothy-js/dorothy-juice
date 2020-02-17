@@ -1,0 +1,42 @@
+{
+  "name": "@pollon/juice",
+  "version": "1.0.0",
+  "description": "Custom Juice behaviours for the Pollon framework",
+  "main": "dist/pollon-juice.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pollon-js/juice.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "dev:build": "rollup -c ./build/index.js",
+    "prepublish": "npm run dev:build"
+  },
+  "keywords": [
+    "pollon",
+    "juice",
+    "frontend",
+    "plugin"
+  ],
+  "author": "Francesco Lasaracina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pollon-js/juice/issues"
+  },
+  "homepage": "https://github.com/pollon-js/juice#readme",
+  "dependencies": {
+    "@pollon/juice-lang": "^1.0.0",
+    "@pollon/message-broker": "^1.0.0",
+    "@pollon/state-machine": "^1.0.0",
+    "@pollon/light-dom": "^1.0.0",
+    "@pollon/pollon": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "rollup": "^1.31.1",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-terser": "^5.2.0"
+  }
+}
